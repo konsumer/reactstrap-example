@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "start": "parcel src/index.html",
-    "deploy": "surge dist reactstrap-example.surge.sh"
+    "deploy": "surge dist reactstrap-example.surge.sh",
+    "predeploy": "npm run build",
+    "build": "parcel build src/index.html"
   },
   "license": "MIT",
   "devDependencies": {
